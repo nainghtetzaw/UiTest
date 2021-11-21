@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/carRentingFragment">
+
+    <fragment
+        android:id="@+id/carRentingFragment"
+        android:name="com.codigo.uitest.fragments.CarRentingFragment"
+        android:label="fragment_car_renting"
+        tools:layout="@layout/fragment_car_renting" />
+</navigation>
