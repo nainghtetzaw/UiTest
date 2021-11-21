@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivAddress"
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            android:src="@drawable/ic_address"
+            android:layout_marginStart="@dimen/margin_large_1x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvLocationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="@dimen/text_size_medium_1x"
+            android:textColor="@color/colorDarkGrey"
+            android:textStyle="bold"
+            android:layout_marginTop="-2dp"
+            android:layout_marginStart="@dimen/margin_medium_2x"
+            app:layout_constraintTop_toTopOf="@id/ivAddress"
+            app:layout_constraintStart_toEndOf="@id/ivAddress"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium_3x"
+            android:layout_marginStart="@dimen/margin_medium_2x"
+            app:layout_constraintStart_toEndOf="@id/ivAddress"
+            app:layout_constraintTop_toBottomOf="@id/tvLocationLabel"/>
+
+        <View
+            android:id="@+id/locationAndTimeSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGrey"
+            android:layout_marginTop="@dimen/margin_large_1x"
+            app:layout_constraintTop_toBottomOf="@id/tvLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/layoutDateTimeAndDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/locationAndTimeSeparator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivDateAndTime"
+                    android:layout_width="@dimen/icon_small"
+                    android:layout_height="@dimen/icon_small"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginTop="@dimen/margin_large_2x"
+                    android:layout_marginStart="@dimen/margin_large_1x"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvDateAndTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_and_time"
+                    android:textSize="@dimen/text_size_medium_1x"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginStart="@dimen/margin_medium_2x"
+                    app:layout_constraintTop_toTopOf="@id/ivDateAndTime"
+                    app:layout_constraintStart_toEndOf="@id/ivDateAndTime"/>
+
+                <TextView
+                    android:id="@+id/tvDateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/now"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium_3x"
+                    android:layout_marginStart="@dimen/margin_medium_2x"
+                    app:layout_constraintStart_toEndOf="@id/ivDateAndTime"
+                    app:layout_constraintTop_toBottomOf="@id/tvDateAndTimeLabel"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGrey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivDuration"
+                    android:layout_width="@dimen/icon_small"
+                    android:layout_height="@dimen/icon_small"
+                    android:src="@drawable/ic_duration"
+                    android:layout_marginTop="@dimen/margin_large_2x"
+                    android:layout_marginStart="@dimen/margin_large_1x"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvDurationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration"
+                    android:textSize="@dimen/text_size_medium_1x"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginStart="@dimen/margin_medium_2x"
+                    app:layout_constraintTop_toTopOf="@id/ivDuration"
+                    app:layout_constraintStart_toEndOf="@id/ivDuration"/>
+
+                <TextView
+                    android:id="@+id/tvDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1hr"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium_3x"
+                    android:layout_marginStart="@dimen/margin_medium_2x"
+                    app:layout_constraintStart_toEndOf="@id/ivDuration"
+                    app:layout_constraintTop_toBottomOf="@id/tvDurationLabel"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

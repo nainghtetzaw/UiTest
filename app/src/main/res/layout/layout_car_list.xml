@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:paddingTop="@dimen/margin_large_2x">
+
+        <TextView
+            android:id="@+id/tvCarCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_300"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_large_1x"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_medium_1x"
+            android:layout_marginStart="@dimen/margin_large_1x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvCarsFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cars_found"
+            android:textSize="@dimen/text_size_medium_4x"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/margin_small_2x"
+            android:paddingBottom="2dp"
+            app:layout_constraintStart_toEndOf="@id/tvCarCount"
+            app:layout_constraintBottom_toBottomOf="@id/tvCarCount"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFilter"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_50"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/white"
+            android:text="@string/filter"
+            android:textSize="@dimen/text_size_medium_3x"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:cornerRadius="@dimen/margin_small_3x"
+            android:layout_marginEnd="@dimen/margin_small_3x"
+            app:layout_constraintEnd_toStartOf="@id/btnMap"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMap"
+            android:layout_width="@dimen/dimen_80"
+            android:layout_height="@dimen/dimen_50"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/white"
+            android:text="@string/map"
+            android:textSize="@dimen/text_size_medium_3x"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            app:cornerRadius="@dimen/margin_small_3x"
+            android:layout_marginEnd="@dimen/margin_large_1x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCarList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+            app:layout_constraintTop_toBottomOf="@id/btnFilter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

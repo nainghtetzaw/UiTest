@@ -9,5 +9,14 @@
         android:id="@+id/carRentingFragment"
         android:name="com.codigo.uitest.fragments.CarRentingFragment"
         android:label="fragment_car_renting"
-        tools:layout="@layout/fragment_car_renting" />
+        tools:layout="@layout/fragment_car_renting" >
+        <action
+            android:id="@+id/action_carRentingFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.codigo.uitest.fragments.SearchResultsFragment"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_search_results" />
 </navigation>

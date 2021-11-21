@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="toolbar_height"> 50dp </dimen>
+    <dimen name="dimen_70"> 70dp </dimen>
 
     <!-- Margins -->
     <dimen name="margin_small_1x">10dp</dimen>
@@ -38,18 +38,26 @@
     <dimen name="margin_xx_huge_n">-48dp</dimen>
 
     <!-- Text sizes -->
-    <dimen name="text_size_small_1x">10dp</dimen>
-    <dimen name="text_size_medium_1x">12dp</dimen>
-    <dimen name="text_size_medium_2x">14dp</dimen>
-    <dimen name="text_size_medium_3x">16dp</dimen>
-    <dimen name="text_size_medium_4x">18dp</dimen>
-    <dimen name="text_size_large_1x">20dp</dimen>
-    <dimen name="text_size_large_2x">22dp</dimen>
-    <dimen name="text_size_large_3x">24dp</dimen>
-    <dimen name="text_size_large_4x">26dp</dimen>
-    <dimen name="text_size_large_5x">28dp</dimen>
-    <dimen name="text_size_x_huge">32dp</dimen>
-    <dimen name="text_size_xx_huge">48dp</dimen>
-    <dimen name="text_size_xxx_huge">56dp</dimen>
+    <dimen name="text_size_small_1x">10sp</dimen>
+    <dimen name="text_size_medium_1x">12sp</dimen>
+    <dimen name="text_size_medium_2x">14sp</dimen>
+    <dimen name="text_size_medium_3x">16sp</dimen>
+    <dimen name="text_size_medium_4x">18sp</dimen>
+    <dimen name="text_size_large_1x">20sp</dimen>
+    <dimen name="text_size_large_2x">22sp</dimen>
+    <dimen name="text_size_large_3x">24sp</dimen>
+    <dimen name="text_size_large_4x">26sp</dimen>
+    <dimen name="text_size_large_5x">28sp</dimen>
+    <dimen name="text_size_x_huge">32sp</dimen>
+    <dimen name="text_size_xx_huge">48sp</dimen>
+    <dimen name="text_size_xxx_huge">56sp</dimen>
+
+    <dimen name="icon_small">32dp </dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
 
 </resources>

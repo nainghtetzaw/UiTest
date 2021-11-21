@@ -2,4 +2,28 @@
     <string name="app_name">UiTest</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rent_a_car">Rent a Car</string>
+    <string name="bookings">Bookings</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="account">Account</string>
+    <string name="location">Location</string>
+    <string name="current_location">Current Location</string>
+    <string name="data_and_time"><![CDATA[Date & Time]]></string>
+    <string name="now">Now</string>
+    <string name="duration">Duration</string>
+    <string name="_1hr">1hr</string>
+    <string name="go">Go</string>
+    <string name="search_results">Search results</string>
+    <string name="_300">300+</string>
+    <string name="cars_found">cars found</string>
+    <string name="filter">Filter</string>
+    <string name="map">Map</string>
+    <string name="mazda">Mazda 3</string>
+    <string name="carId">SMS1000Z</string>
+    <string name="car_capacity">5 Seater</string>
+    <string name="distance">0.5KM AWAY</string>
+    <string name="rental_fee_label">Rental Fee</string>
+    <string name="rental_fee">Fr.$3.00/hr</string>
+    <string name="mileage_fee_label">Mileage Fee</string>
+    <string name="mileage_fee">$0.40/km</string>
 </resources>
