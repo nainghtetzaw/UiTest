@@ -26,4 +26,23 @@
     <string name="rental_fee">Fr.$3.00/hr</string>
     <string name="mileage_fee_label">Mileage Fee</string>
     <string name="mileage_fee">$0.40/km</string>
+    <string name="bookingId">Booking ID : 44123331</string>
+    <string name="confirmed">CONFIRMED</string>
+    <string name="start_date">Start Date</string>
+    <string name="startDate">Mon, 1 Nov 20\n11:45am</string>
+    <string name="end_date_label">End Date</string>
+    <string name="end_date">Tue, 2 Now 20\n11:45am</string>
+    <string name="duration_days">02</string>
+    <string name="duration_hours">00</string>
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="pick_up_car_at">Pick up car at</string>
+    <string name="pick_up_address">194 Punggol Road P1000 Multi Storey Car Park</string>
+    <string name="construction_level">Level 4 / Lot 123 - 456</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="parking_images_count">+10</string>
+    <string name="estimated_total_label">Estimated total</string>
+    <string name="not_final_amount">*Amount is not final</string>
+    <string name="estimated_amount">S$52.00</string>
+    <string name="need_help">Need Help?</string>
+    <string name="cancel_this_booking">Cancel this booking</string>
 </resources>

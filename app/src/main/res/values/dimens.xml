@@ -53,6 +53,7 @@
     <dimen name="text_size_xxx_huge">56sp</dimen>
 
     <dimen name="icon_small">32dp </dimen>
+    <dimen name="icon_big">50dp </dimen>
     <dimen name="dimen_60">60dp</dimen>
     <dimen name="dimen_80">80dp</dimen>
     <dimen name="dimen_50">50dp</dimen>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/primary_color"
+        app:cardCornerRadius="@dimen/margin_small_2x">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvDurationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="@dimen/text_size_medium_1x"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_small_2x"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/durationDaysAndHoursDivider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium_2x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationLabel"/>
+
+            <TextView
+                android:id="@+id/tvDurationDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration_days"
+                android:textSize="@dimen/text_size_medium_2x"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/margin_small_2x"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationLabel"
+                app:layout_constraintEnd_toStartOf="@id/durationDaysAndHoursDivider"/>
+
+            <TextView
+                android:id="@+id/tvDurationHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duration_hours"
+                android:textSize="@dimen/text_size_medium_2x"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/margin_small_2x"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationLabel"
+                app:layout_constraintStart_toEndOf="@id/durationDaysAndHoursDivider"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="days"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small_1x"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationDays"
+                app:layout_constraintEnd_toEndOf="@id/tvDurationDays"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hours"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small_1x"
+                app:layout_constraintTop_toBottomOf="@id/tvDurationHours"
+                app:layout_constraintStart_toStartOf="@id/tvDurationHours"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

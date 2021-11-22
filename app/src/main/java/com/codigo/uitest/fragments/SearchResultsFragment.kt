@@ -32,7 +32,7 @@ class SearchResultsFragment : Fragment(), CarListDelegate {
     }
 
     override fun onTapCar() {
-
+        findNavController().navigate(R.id.action_searchResultsFragment_to_detailFragment)
     }
 
     private fun setupRecyclerView() {

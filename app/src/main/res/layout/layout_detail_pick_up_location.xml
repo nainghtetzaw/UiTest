@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_large_1x"
+        android:paddingStart="@dimen/margin_large_1x"
+        android:paddingEnd="@dimen/margin_large_1x">
+
+        <TextView
+            android:id="@+id/tvPickUpCarLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_up_car_at"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/text_size_medium_3x"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivPickUpMap"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:src="@drawable/pick_up_map"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/margin_medium_2x"
+            app:layout_constraintTop_toBottomOf="@id/tvPickUpCarLabel"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvPickUpAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_up_address"
+            android:textSize="@dimen/text_size_medium_2x"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            app:layout_constraintStart_toEndOf="@id/ivPickUpMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivPickUpMap"/>
+
+        <TextView
+            android:id="@+id/tvPickUpDetailAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/construction_level"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            app:layout_constraintStart_toEndOf="@id/ivPickUpMap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPickUpAddress"/>
+
+        <RelativeLayout
+            android:id="@+id/btnGetDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/rounded_corner_black_stroke"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            android:layout_marginTop="@dimen/margin_small_1x"
+            android:paddingStart="@dimen/margin_medium_2x"
+            android:paddingEnd="@dimen/margin_medium_2x"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintStart_toEndOf="@id/ivPickUpMap"
+            app:layout_constraintTop_toBottomOf="@id/tvPickUpDetailAddress">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/get_directions"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium_2x"
+                android:drawableStart="@drawable/ic_get_direction"
+                android:drawablePadding="-85dp"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ivParking1"
+            android:layout_width="@dimen/icon_big"
+            android:layout_height="@dimen/icon_big"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            android:layout_marginTop="@dimen/margin_small_3x"
+            app:layout_constraintStart_toEndOf="@id/ivPickUpMap"
+            app:layout_constraintTop_toBottomOf="@id/btnGetDirections">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big"
+                android:src="@drawable/car_parking"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ivParking2"
+            android:layout_width="@dimen/icon_big"
+            android:layout_height="@dimen/icon_big"
+            app:cardCornerRadius="5dp"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            android:layout_marginTop="@dimen/margin_small_3x"
+            app:layout_constraintStart_toEndOf="@id/ivParking1"
+            app:layout_constraintTop_toBottomOf="@id/btnGetDirections">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big"
+                android:src="@drawable/car_parking"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/layoutCarParkingCount"
+            android:layout_width="@dimen/icon_big"
+            android:layout_height="@dimen/icon_big"
+            android:layout_marginStart="@dimen/margin_small_1x"
+            android:layout_marginTop="@dimen/margin_small_3x"
+            app:layout_constraintStart_toEndOf="@id/ivParking2"
+            app:layout_constraintTop_toBottomOf="@id/btnGetDirections"
+            android:background="@drawable/rounded_corner_black_stroke"
+            android:foreground="?attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/parking_images_count"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
